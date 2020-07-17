@@ -119,7 +119,8 @@ unsigned int BLINKER_PMSX003ST::getPmCf1(double pm){
 }
 
 void BLINKER_PMSX003ST::parseAQI() {
-    uint16_t AQI25, AQI100, color;
+    uint16_t AQI25, AQI100;
+    uint16_t color = 0;
     for (uint8_t Bnum = 0; Bnum < 2; Bnum++) {
     // uint8_t Bnum = 0;
         AQI25 = 0;
